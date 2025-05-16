@@ -196,7 +196,7 @@ class Game:
 
 
 
-        if pg.sprite.spritecollide(self.player, self.pipes, False) or self.player.rect.y > SCREEN_HEIGHT:
+        if pg.sprite.spritecollide(self.player, self.pipes, False) or self.player.rect.y > SCREEN_HEIGHT or self.player.rect.y < 0:
             self.mode = 'game_over'
 
 
